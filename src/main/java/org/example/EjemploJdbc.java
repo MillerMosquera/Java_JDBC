@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.models.Categoria;
 import org.example.models.Producto;
 import org.example.repositorio.IRepositorio;
 import org.example.repositorio.Implements.ProductoRepositorioImpl;
@@ -20,16 +21,20 @@ public class EjemploJdbc {
             System.out.println("============= Listar por Id =============");
             System.out.println(repositorio.porId(2L));
 
-            /*System.out.println("============= Insertar =============");
+            /*
+            System.out.println("============= Insertar =============");
             Producto producto = new Producto();
-            producto.setNombre("Teclado");
-            producto.setPrecio(150);
+            producto.setNombre("Teclado Red Dragon Mecánico");
+            producto.setPrecio(450);
             producto.setFecha_registro(new Date());
+            Categoria categoria = new Categoria();
+            categoria.setId(3L);
+            producto.setCategoria(categoria);
             repositorio.guardar(producto);
             System.out.println("Producto guardado con éxito");
             repositorio.listar().forEach(System.out::println);
-
              */
+
 
             /*
             Producto producto = new Producto();
